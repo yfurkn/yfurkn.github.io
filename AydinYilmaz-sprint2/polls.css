@@ -1,0 +1,45 @@
+.title { /* title design */
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.poll-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.poll-box { /* box design with question, options and button */
+    width: 40%;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* shadow effect */
+    background-color: #f5e9e9; 
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+.poll-question{ /* question text */
+    text-align: center;
+}
+
+.poll-options { /* options design */
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.poll-options input[type="submit"] { /* vote button design */
+    margin-top: 10px; 
+    padding: 5px 10px; 
+    background-color: #07c29b; 
+    color: white; 
+    border: none;
+    border-radius: 10px;  
+    cursor: pointer; 
+    font-size: 20px; 
+    margin-left: 20px;
+}

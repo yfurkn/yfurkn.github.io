@@ -1,0 +1,83 @@
+/* icons design */
+.email-icon {
+    width: 15px;
+    height: auto;
+}
+
+.phone-icon {
+    width: 12px;
+    height: auto; 
+}
+
+.location-icon {
+    width: 15px; 
+    height: auto; 
+}
+
+.center {
+    text-align: center;
+}
+
+.contact-box { /* design of contact box */
+    width: 35%; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f5e9e9;
+}
+
+.contact-box h2 { /* design of "Contact Us" title */
+    text-align: center;
+    font-size: 30px;
+}
+
+.title { /* title design ("Support", "Contact Information") */
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.message { /* subtexts design */
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.submit-btn {
+    margin-top: 10px; 
+    padding: 5px 10px; 
+    background-color: #cc3939; 
+    color: white; 
+    border: none;
+    border-radius: 10px;  
+    cursor: pointer; 
+    font-size: 20px; 
+    margin-left: 20px;
+}
+
+.social-media-container { /* design of social media icons */
+    position: fixed; /* Fix the container to the viewport */
+    margin-right: 40px;
+    margin-bottom: 40px;
+    bottom: 0; /* Align to bottom */
+    right: 0; /* Align to right */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center-align the icons */
+    padding: 10px;
+    gap: 20px; /* Space between icons */
+}
+
+
+.social-icon { /* icon design */
+    width: 40px; /* Social media logo size */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover,
+.social-icon:focus { 
+    transform: scale(1.3); /* Slightly enlarge icons on hover */
+}

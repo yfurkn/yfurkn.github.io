@@ -1,0 +1,55 @@
+.page-title { /* title design */
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    font-size: 40px; 
+    color: #333; 
+}
+
+
+.announcements-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 15px;
+}
+
+.announcement-box { /* box design with logo and texts */
+    width: 30%; 
+    margin-bottom: 15px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: #f5e9e9;
+}
+
+.announcement-image { /* images of announcements design */
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.announcement-title { /* title of announcements design */
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.announcement-date { /* date of announcements design */
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.announcement-divider { /* divider line */
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+
+.announcement-summary { /* description of announcements design */
+    font-size: 20px;
+    color: #666;
+}

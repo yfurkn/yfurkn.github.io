@@ -1,0 +1,67 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-gallery {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* spaces between images */
+    align-items: center;
+}
+
+.image-gallery-1 { /* style of gallery images */
+    width: 350px; 
+    height: auto; 
+    border-radius: 20px; 
+}
+
+.image-gallery-2 { /* style of gallery images  */
+    width: 350px; 
+    height: auto; 
+    border-radius: 20px; 
+    padding-left: 250px;  /* slide the picture left */
+}
+
+.logo-texts { /* box design with logo and texts */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    flex-basis: 100%; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    background-color: #f5e9e9;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* shadow effect */
+}
+
+.about-logo { /* logo design */
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.about-text { /* text design */
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text section {
+    margin-bottom: 10px;
+}
+
+.about-text h2 { /* about title */
+    color: #01808f; 
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.about-text p { /* about explanation */
+    color: #035371; 
+    font-size: 20px;
+}
