@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click and Move Game</title>
+    <link rel="stylesheet" href="activity6.css">
+    <script type="text/javascript" src="activity6.js"></script>
+
+    <style>
+        #gameButton {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <button id="gameButton">Tıkla!</button>
+
+    <script>
+        var level = 1;
+        var successClicks = 0;
+        var timeout = 500; // Level 1 için timeout süresi
+        var timer;
+
+        function resetGame() {
+            level = 1;
+            successClicks = 0;
+            timeout = 500;
+            alert("Başarısız oldunuz, oyun sıfırdan başlıyor.");
+            moveButton(); // Oyun sıfırlanınca düğmeyi rastgele bir konuma taşı
+        }
+
+        function moveToNextLevel() {
+            level++;
+            successClicks = 0; // Başarı sayısını sıfırla
+            timeout -= 100; // Sonraki seviye için timeout süresini azalt
+            alert("Tebrikler, seviye " + level + "!");
+            moveButton();
+        }
+
+        function moveButton() {
+            var gameButton = document.getElementById("gameButton");
+            var newX = Math.random() * (window.innerWidth - gameButton.offsetWidth);
+            var newY = Math.random() * (window.innerHeight - gameButton.offsetHeight);
+            gameButton.style.left = newX + 'px';
+            gameButton.style.top = newY + 'px';
+        }
+
+        document.getElementById("gameButton").addEventListener("mouseenter", function() {
+            timer = setTimeout(function() {
+                resetGame(); // Zamanında tıklanmazsa oyunu sıfırla
+            }, timeout);
+        });
+
+        document.getElementById("gameButton").addEventListener("click", function(event) {
+            event.stopPropagation(); // Butona tıklanınca timeout'u tetikleyen mouseenter olayını engelle
+            clearTimeout(timer); // Timeout'ı iptal et
+
+            successClicks++;
+            if (successClicks >= 3) {
+                moveToNextLevel();
+            } else {
+                moveButton();
+            }
+        });
+
+        // Sayfa dışına tıklanınca timer'ı iptal et
+        document.addEventListener("click", function() {
+            clearTimeout(timer);
+        });
+    </script>
+</body>
+</html>
