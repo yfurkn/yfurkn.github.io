@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table Layout</title>
+    <link rel="stylesheet" href="AydinYilmazActivity8.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="AydinYilmazActivity8.js"></script>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <table>
+            <tr>
+                <td>What programming language do you know?</td>
+                <td><input type="text" id="language" name="language" required></td>  <!-- Required attribute added -->
+            </tr>
+            <tr>
+                <td>What is your birthday?</td>
+                <td><input type="text" id="birthday" name="birthday" required></td> <!-- Optional required for demonstration -->
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="email" name="email" required placeholder="Enter a valid email address"></td> <!-- Type email for validation -->
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td><input type="url" name="website" required></td> <!-- Type url for validation -->
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
