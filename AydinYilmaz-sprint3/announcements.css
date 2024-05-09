@@ -1,0 +1,55 @@
+.page-title {
+    text-align: center; /* Başlığı ortalar */
+    margin-top: 30px; /* Üstten boşluk */
+    margin-bottom: 20px; /* Altından boşluk */
+    font-size: 40px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+}
+
+
+.announcements-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 15px;
+}
+
+.announcement-box {
+    width: 30%; /* Kutunun genişliği */
+    margin-bottom: 15px; /* Alt kutular arası dikey boşluk */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gölge efekti */
+    padding: 10px;
+    border-radius: 20px; /* Kutu köşelerini yuvarlak yapar */
+    background-color: #f5e9e9;
+}
+
+.announcement-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Resim köşelerini yuvarlak yapar */
+    margin-bottom: 10px;
+}
+
+.announcement-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.announcement-date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.announcement-divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+
+.announcement-summary {
+    font-size: 20px;
+    color: #666;
+}

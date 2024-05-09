@@ -1,0 +1,36 @@
+.title {
+    font-size: 33px;
+    text-align: center;
+}
+
+
+.poll-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center; /*poll yatayda tam ortala */
+}
+
+.poll-box {
+    width: 40%;
+    border: 3px solid #cc3939; /* ÇALIŞMIYOR */
+    border-radius: 20px; /* Kutu köşelerini yuvarlak yapar */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gölge efekti */
+    background-color: #f5e9e9; 
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+.poll-question{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .poll-box {
+        width: 100%; /* Küçük ekranlarda tek sıra halinde görüntülenmesi */
+        margin-bottom: 10px;
+    }
+}

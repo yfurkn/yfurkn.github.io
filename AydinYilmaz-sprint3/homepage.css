@@ -1,0 +1,68 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo-container {
+    flex-basis: 40%;
+    text-align: center;
+    padding: 100px;
+}
+
+.main-logo {
+    width: 90%;
+}
+
+.community-info {
+    flex-basis: 50%;
+}
+
+.community-info h1 { /* header text style */
+    color: #035371; 
+    font-size: 100px; 
+    margin-bottom: 10px;
+}
+
+.community-info p { /* caption text style */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+.signup-btn { /* register button text style */
+    padding: 20px 30px;
+    font-size: 25px;
+    background-color: #07c29b;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+
+.social-media-icons {
+    display: flex;
+    justify-content: end; /* Logo buttons location */
+    padding-top: 80px; /* top-space from register button */
+    padding-right: 30px; /* right-space from register button */
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 25px; /* Space between each icon */
+    transition: transform 0.3s ease; /* Animation when hovering over the icon */
+}
+
+.social-icon img {
+    width: 40px; /* Social media logo size */
+    height: auto;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: scale(1.3); /* Zoom in when hovering over the icon */
+}

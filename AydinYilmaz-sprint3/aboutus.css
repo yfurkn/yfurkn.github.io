@@ -1,0 +1,67 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-gallery {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Resimler arasında boşluk */
+    align-items: center;
+}
+
+.image-gallery-1 {
+    width: 350px; /* Resimlerin kaplayacağı genişlik */
+    height: auto; /* Resimlerin yüksekliği otomatik ayarlanır */
+    border-radius: 20px; /* Resimlerin köşeleri yuvarlaklaştırılır */
+}
+
+.image-gallery-2 {
+    width: 350px; /* Resimlerin kaplayacağı genişlik */
+    height: auto; /* Resimlerin yüksekliği otomatik ayarlanır */
+    border-radius: 20px; /* Resimlerin köşeleri yuvarlaklaştırılır */
+    padding-left: 250px;
+}
+
+.logo-texts {
+    display: flex; /* flexbox modelini uygular */
+    flex-direction: column; /* öğeleri dikey olarak sıralar */
+    align-items: center; /* içerikleri yatay eksende ortalar */
+    justify-content: center; /* içerikleri dikey eksende ortalar */
+    flex-basis: 100%; /* kutunun baz alınacak genişliğini belirler */
+    max-width: 700px; /* maksimum genişliği sınırlar */
+    margin: 0 auto; /* otomatik marjin ile kutuyu merkeze alır */
+    background-color: #f5e9e9;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gölge efekti */
+}
+
+.about-logo {
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.about-text {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text section {
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    color: #01808f; /* Başlık rengi */
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.about-text p {
+    color: #035371; /* Metin rengi */
+    font-size: 20px;
+}
