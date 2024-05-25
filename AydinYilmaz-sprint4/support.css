@@ -1,0 +1,44 @@
+.email-icon {
+    width: 15px;
+    height: auto;
+}
+
+.phone-icon {
+    width: 12px;
+    height: auto; 
+}
+
+.location-icon {
+    width: 15px; 
+    height: auto; 
+}
+
+.center {
+    text-align: center;
+}
+
+.contact-box {
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f5e9e9;
+}
+
+.contact-box h2 {
+    text-align: center;
+}
+
+.title {
+    font-size: 33px;
+    text-align: center;
+}
+
+
+.message {
+    font-size: 20px;
+    text-align: center;
+
+}

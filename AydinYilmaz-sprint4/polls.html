@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polls.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Sci-Tech Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="polls.html">Polls</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="signup.html" class="login-box">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="polls-section">
+            <h1 class="title">We Care Your Opinions!</h1>
+            <div class="poll-container">
+                <div class="poll-box" id="poll1" onclick="togglePoll('poll1')">
+                    <h2 class="poll-question">What is your favorite color?</h2>
+                    <div class="poll-options">
+                        <form action="vote.php" method="post">
+                            <input type="radio" id="color-red" name="color" value="Red">
+                            <label for="color-red">Red</label><br>
+                            <input type="radio" id="color-blue" name="color" value="Blue">
+                            <label for="color-blue">Blue</label><br>
+                            <input type="radio" id="color-green" name="color" value="Green">
+                            <label for="color-green">Green</label><br>
+                            <input type="submit" value="Vote">
+                        </form>
+                    </div>
+                </div>
+                <div class="poll-box" id="poll2" onclick="togglePoll('poll2')">
+                    <h2 class="poll-question">What is your favorite food?</h2>
+                    <div class="poll-options">
+                        <form action="vote.php" method="post">
+                            <input type="radio" id="food-pizza" name="food" value="Pizza">
+                            <label for="food-pizza">Pizza</label><br>
+                            <input type="radio" id="food-burger" name="food" value="Burger">
+                            <label for="food-burger">Burger</label><br>
+                            <input type="radio" id="food-pasta" name="food" value="Pasta">
+                            <label for="food-pasta">Pasta</label><br>
+                            <input type="submit" value="Vote">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="poll-box" id="poll3" onclick="togglePoll('poll3')">
+                    <h2 class="poll-question">What should be our event date?</h2>
+                    <div class="poll-options">
+                        <form action="vote.php" method="post">
+                            <input type="radio" id="April-15" name="date" value="April 15">
+                            <label for="food-pizza">April 15</label><br>
+                            <input type="radio" id="April-16" name="date" value="April 16">
+                            <label for="food-burger">April 16</label><br>
+                            <input type="radio" id="April717" name="date" value="April 15">
+                            <label for="food-pasta">April 17</label><br>
+                            <input type="submit" value="Vote">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="poll-box" id="poll4" onclick="togglePoll('poll4')">
+                    <h2 class="poll-question">Next Event Topic: What should our next event be about?</h2>
+                    <div class="poll-options">
+                        <form action="vote.php" method="post">
+                            <input type="radio" id="topic-science-tech" name="topic" value="Science and Technology">
+                            <label for="topic-science-tech">Science and Technology</label><br>
+                            <input type="radio" id="topic-socializing" name="topic" value="Socializing">
+                            <label for="topic-socializing">Socializing</label><br>
+                            <input type="radio" id="topic-art" name="topic" value="Art">
+                            <label for="topic-art">Art</label><br>
+                            <input type="submit" value="Vote">
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="poll-box" id="poll5" onclick="togglePoll('poll5')">
+
+                    <h2 class="poll-question">How can you find us?</h2>
+                    <div class="poll-options">
+                        <form action="vote.php" method="post">
+                            <input type="radio" id="option1" name="option" value="Google">
+                            <label for="option1">Google</label><br>
+                            <input type="radio" id="option2" name="option" value="Facebook">
+                            <label for="option2">Facebook</label><br>
+                            <input type="radio" id="option3" name="option" value="Twitter">
+                            <label for="option3">Twitter</label><br>
+                            <input type="radio" id="option4" name="option" value="Instagram">
+                            <label for="option4">Instagram</label><br>
+                            <input type="radio" id="option5" name="option" value="Friend on Social Media">
+                            <label for="option5">Friend on Social Media</label><br>
+                            <input type="radio" id="option6" name="option" value="Other">
+                            <label for="option6">Other</label><br>
+                            <input type="submit" value="Vote">
+                        </form>
+                    </div>
+                </div>
+                
+                            
+
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    
+    
+
+        </section>
+    </main>
+
+    <script src="polls.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPPORT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Sci-Tech Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="polls.html">Polls</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="signup.html" class="login-box">Log In</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="support-section">
+            <h1 class="title">Support</h1>
+        <p class="message">Welcome to our support page. If you have any questions or issues, please don't hesitate to contact us.</p>
+            <h2 class="title">Contact Information</h2>
+            <p class="message"><img class="email-icon" src="images/email_icon.png" alt="Email">  Email: support@example.com</p>
+            <p class="message"><img class="phone-icon" src="images/phone_icon.png" alt="Phone">  Phone: +1234567890</p>
+            <p class="message"><img class="location-icon" src="images/location_icon.png" alt="Location">  Location: Keçiören/Ankara</p>
+
+
+    
+            <div class="contact-box center">
+                <h2>Contact Us</h2>
+                <form action="submit_complaint.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
